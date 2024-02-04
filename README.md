@@ -209,6 +209,11 @@ The final results should be sorted from low to high, and you only need to includ
 Then, run the `visualize.py` file with the `--input_path` equal to both the country and lang files created in the reduce phase, and the `--key` set to `#coronavirus` and `#코로나바이러스`.
 This should generate four plots in total.
 
+<img src=lang_coronavirus.png />
+<img src=country_coronavirus.png />
+<img src=lang_korean.png />
+<img src=country_korean.png />
+
 **Task 4: Alternative Reduce**
 
 Create a new file `alternative_reduce.py`.
