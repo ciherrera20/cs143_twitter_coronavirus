@@ -31,7 +31,12 @@ if args.percent:
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
 items = items[:10]  # Get only the top 10 keyss
 items = list(zip(*items))  # Transpose list
+xlabel = os.path.splitext(args.input_path)[1]
+if xlabel != '':
+    xlabel = xlabel[1:]
 plt.bar(range(len(items[0])), items[1])  # With matplotlib 2.1.1, giving strings as the first argument causes the graph to be sorted alphabetically. We get around this by first passing in numbers and then labelling the x ticks with strings
+plt.title(args.key)
+plt.xlabel(xlabel)
 plt.xticks(range(len(items[0])), items[0])
 plt.savefig(sys.stdout.buffer)
 plt.close()
