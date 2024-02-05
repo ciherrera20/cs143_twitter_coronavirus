@@ -19,5 +19,5 @@ The following 4 plots show the number of times that the hastags `#coronavirus` a
 <img src="country_korean.png" />
 
 The following plot shows the number of times various hashtags were used on each day of 2020.
-<img src="hastag_frequency.png" />
+<img src="hashtag_frequency.png" />
 
