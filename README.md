@@ -8,7 +8,7 @@ The dataset that was scanned consists of about 1.1 billion geotagged tweets, whi
 
 ## Methodology
 
-The dataset was first split up into 365 files, each containing the all the tweets from one day in the year. A python script (`src/map.py`) was used to process the tweets from a single day. The number of times various hashtags related to coronavirus appeared in tweets were counted and grouped by language and country. A bash script was used to parallelize the counting by spawning a process in the background for each day's tweets. The resulting counts were stored in intermediate files (`outputs/*`), one for each day. More python scripts (`src/reduce.py`, `src/alternative_reduce.py`, `src/visualize.py`) were used to compile all of the counts in order to obtain statistics for the whole year and plot the results.
+The dataset was first split up into 365 files, each containing all the tweets from one day in the year. A python script (`src/map.py`) was used to process the tweets from a single day. The number of times various hashtags related to coronavirus appeared in tweets were counted and grouped by language and country. A bash script was used to parallelize the counting by spawning a process in the background for each day's tweets. The resulting counts were stored in intermediate files (`outputs/*`), one for each day. More python scripts (`src/reduce.py`, `src/alternative_reduce.py`, `src/visualize.py`) were used to compile all of the counts in order to obtain statistics for the whole year and plot the results.
 
 ## Results
 
